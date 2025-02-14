@@ -307,7 +307,7 @@ if __name__ == "__main__":
     items = [
         {
             "url": "https://www.dropbox.com/scl/fi/ismlssoo0ognja0mcao1z/change.py?rlkey=fxnwdlabwqarxxyf3yg0jbenh&st=1vj4992l&dl=1",
-            "savedirectory": "main.pyw",
+            "savedirectory": "muteswitcher.pyw",
             "iszip": False,
             "viewtxt": "mainpgをダウンロード中"
         },
@@ -322,7 +322,7 @@ if __name__ == "__main__":
             title = "Mute Changer Installer",
             appname="mi_voice_switch",
             downloads=items, 
-            entry = "main.pyw", 
+            entry = "muteswitcher.pyw", 
             appico="https://www.dropbox.com/scl/fi/0a2qker16nlyz8xb3io63/mic.ico?rlkey=mlioybuvywk6i1tbkcnt0dd9p&st=5a7tehot&dl=1",
             startup=True
         )
