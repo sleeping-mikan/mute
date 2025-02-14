@@ -323,6 +323,7 @@ if __name__ == "__main__":
             appname="mi_voice_switch",
             downloads=items, 
             entry = "main.pyw", 
-            appico="https://www.dropbox.com/scl/fi/0a2qker16nlyz8xb3io63/mic.ico?rlkey=mlioybuvywk6i1tbkcnt0dd9p&st=5a7tehot&dl=1"
+            appico="https://www.dropbox.com/scl/fi/0a2qker16nlyz8xb3io63/mic.ico?rlkey=mlioybuvywk6i1tbkcnt0dd9p&st=5a7tehot&dl=1",
+            startup=True
         )
     subprocess.run(["pyw", os.path.join(os.environ["LOCALAPPDATA"],"MG_mikan","mi_voice_switch","main.pyw")])
