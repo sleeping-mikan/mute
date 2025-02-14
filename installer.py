@@ -306,28 +306,22 @@ class Installer():
 if __name__ == "__main__":
     items = [
         {
-            "url": "https://www.dropbox.com/scl/fi/hsasskge9heraklt3j7xh/main.py?rlkey=n0yv4qt76qnh5c68l540no43e&st=hsllnkhl&dl=1",
-            "savedirectory": "pg2/main.py",
+            "url": "https://github.com/sleeping-mikan/mute/blob/main/change.py",
+            "savedirectory": "main.pyw",
             "iszip": False,
             "viewtxt": "main.pyをダウンロード中"
         },
         {
-            "url": "https://www.dropbox.com/scl/fi/53y0csmeiagvolkr4m1u8/background_changer.zip?rlkey=1fs1vy2ak5bajil0480h6n6i7&st=lyyig55a&dl=1",
-            "savedirectory": "pg2/background_changer.zip",
+            "url": "https://github.com/sleeping-mikan/mute/blob/main/icon.png",
+            "savedirectory": "icon.png",
             "iszip": True,
             "viewtxt": "itemsをダウンロード中"
-        },
-        {
-            "url": "https://www.dropbox.com/scl/fi/53y0csmeiagvolkr4m1u8/background_changer.zip?rlkey=1fs1vy2ak5bajil0480h6n6i7&st=lyyig55a&dl=1",
-            "savedirectory": "pg/background_changer.zip",
-            "iszip": True,
-            "viewtxt": "items2をダウンロード中"
         }
     ]
     installer = Installer(
             title = "tmp_",
             appname="tmp",
             downloads=items, 
-            entry = "pg/main.py", 
+            entry = "main.pyw", 
             appico="https://www.dropbox.com/scl/fi/cw75lmhpkala097rkyzzf/haguruma.ico?rlkey=eaw6236xrpl1dhnwrmw0dvayc&st=76eknxvh&dl=1"
         )
