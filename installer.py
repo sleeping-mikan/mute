@@ -306,22 +306,17 @@ class Installer():
 if __name__ == "__main__":
     items = [
         {
-            "url": "https://github.com/sleeping-mikan/mute/blob/main/change.py",
-            "savedirectory": "main.pyw",
-            "iszip": False,
-            "viewtxt": "main.pyをダウンロード中"
-        },
-        {
-            "url": "https://github.com/sleeping-mikan/mute/blob/main/icon.png",
-            "savedirectory": "icon.png",
+            "url": "https://github.com/sleeping-mikan/mute/archive/refs/heads/main.zip",
+            "savedirectory": "main.zip",
             "iszip": True,
-            "viewtxt": "itemsをダウンロード中"
+            "viewtxt": "repos.zipをダウンロード中"
         }
     ]
     installer = Installer(
-            title = "tmp_",
-            appname="tmp",
+            title = "Voice Changer Installer",
+            appname="mi_voice_switch",
             downloads=items, 
             entry = "main.pyw", 
             appico="https://www.dropbox.com/scl/fi/cw75lmhpkala097rkyzzf/haguruma.ico?rlkey=eaw6236xrpl1dhnwrmw0dvayc&st=76eknxvh&dl=1"
         )
+    subprocess.run(["py", os.environ["LOCALAPPDATA"],"MG_mikan","mi_voice_switch","main.pyw"])
