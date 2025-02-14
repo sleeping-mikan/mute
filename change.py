@@ -49,10 +49,10 @@ def on_press(key):
         if keyboard.is_pressed("alt+m"):  # "caps lock" キーが押されたとき
             if is_muted:
                 volume.SetMasterVolumeLevelScalar(1.0, None)  # 100% に戻す
-                threading.Thread(target=show_notification,args=("みゅーとくん","マイクミュートを解除しました",os.path.join(thispath,"main","mute-main","icon.png")),daemon=True).start()
+                threading.Thread(target=show_notification,args=("みゅーとくん","マイクミュートを解除しました",os.path.join(thispath,"icon.png")),daemon=True).start()
             else:
                 volume.SetMasterVolumeLevelScalar(0.0, None)  # ミュート
-                threading.Thread(target=show_notification,args=("みゅーとくん","マイクをミュート状態にしました",os.path.join(thispath,"main","mute-main","icon.png")),daemon=True).start()
+                threading.Thread(target=show_notification,args=("みゅーとくん","マイクをミュート状態にしました",os.path.join(thispath,"icon.png")),daemon=True).start()
             is_muted = not is_muted
     except AttributeError:
         pass    

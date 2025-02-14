@@ -306,17 +306,23 @@ class Installer():
 if __name__ == "__main__":
     items = [
         {
-            "url": "https://github.com/sleeping-mikan/mute/archive/refs/heads/main.zip",
-            "savedirectory": "main.zip",
-            "iszip": True,
-            "viewtxt": "repos.zipをダウンロード中"
-        }
+            "url": "https://www.dropbox.com/scl/fi/ismlssoo0ognja0mcao1z/change.py?rlkey=fxnwdlabwqarxxyf3yg0jbenh&st=1vj4992l&dl=1",
+            "savedirectory": "main.pyw",
+            "iszip": False,
+            "viewtxt": "mainpgをダウンロード中"
+        },
+        {
+            "url": "https://www.dropbox.com/scl/fi/ja74uzb2zw2pkeinggy12/icon.png?rlkey=hagoqwye7ktlg20pw1rsfn28f&st=u3n9jens&dl=1",
+            "savedirectory": "icon.png",
+            "iszip": False,
+            "viewtxt": "iconをダウンロード中"
+        },
     ]
     installer = Installer(
-            title = "Voice Changer Installer",
+            title = "Mute Changer Installer",
             appname="mi_voice_switch",
             downloads=items, 
             entry = "main.pyw", 
-            appico="https://www.dropbox.com/scl/fi/cw75lmhpkala097rkyzzf/haguruma.ico?rlkey=eaw6236xrpl1dhnwrmw0dvayc&st=76eknxvh&dl=1"
+            appico="https://www.dropbox.com/scl/fi/0a2qker16nlyz8xb3io63/mic.ico?rlkey=mlioybuvywk6i1tbkcnt0dd9p&st=5a7tehot&dl=1"
         )
-    subprocess.run(["py", os.environ["LOCALAPPDATA"],"MG_mikan","mi_voice_switch","main.pyw"])
+    subprocess.run(["py", os.path.join(os.environ["LOCALAPPDATA"],"MG_mikan","mi_voice_switch","main.pyw")])
